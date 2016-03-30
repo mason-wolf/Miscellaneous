@@ -1,7 +1,3 @@
-/** @file Morrowind_Fullscreen.c
- * Find the Morrowind window and force it to fullscreen mode.
- * @author Adrien RICCIARDI
- */
 #define UNICODE
 #include <stdio.h>
 #include <wchar.h>
