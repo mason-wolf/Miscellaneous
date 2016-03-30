@@ -51,6 +51,7 @@ solutions in java:
     swingworker.java
     boa.java
     settingsparser.java
+    displaymodes.java
     
     
 solutions in javascript:
