@@ -17,6 +17,14 @@ solutions in cs:
     identitycheck.cs
     mimicsql.cs
     proxymanager.cs
+    client.cs
+    colorizestring.cs
+    htmlremover.cs
+    httpserver.cs
+    iniparser.cs
+    matrix.cs
+    randomnumber.cs
+    server.cs
 
 solutions in java:
 
