@@ -23,7 +23,7 @@ import java.nio.charset.Charset;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SettingsParser {
+public class settingsparser {
 	String SettingsFilePath = "settings.properties";
 	Properties Settings = new Properties();
 
