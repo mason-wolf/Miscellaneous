@@ -38,6 +38,14 @@ solutions in javascript:
     checkbox.js
     shell.js
     switch.js
+    encrypt.js
+    fsolist.js
+    hints.js
+    colorcodes.js
+    jshtml.js
+    maxlength.js
+    ticker.js
+    typer.js
     
 solutions in powershell:
 
