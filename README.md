@@ -32,6 +32,10 @@ solutions in java:
     swingframe.java
     systemlookfeel.java
     textcontrols.java
+    executepscmd.java
+    settingsparser.java
+    swingworker.java
+    
     
 solutions in javascript:
 
