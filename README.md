@@ -1,5 +1,5 @@
 contents:
-
+    k&r exercise solutions
     celsius.c
     countchar.c
     fahrenheit.c
