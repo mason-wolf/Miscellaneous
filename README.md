@@ -1,7 +1,4 @@
-
 contents:
-
-c 
 
     celsius.c
     countchar.c
