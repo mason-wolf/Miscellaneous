@@ -13,7 +13,8 @@ solutions in c:
     winapi.c
  
 solutions in cs:
-
+    
+    viper.cs
     assemblyinfo.cs
     bitmasker.cs
     colorizestring.cs
@@ -48,6 +49,8 @@ solutions in java:
     executepscmd.java
     settingsparser.java
     swingworker.java
+    boa.java
+    settingsparser.java
     
     
 solutions in javascript:
