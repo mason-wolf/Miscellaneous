@@ -6,6 +6,11 @@ solutions in c:
     forloop.c
     getchar.c
     helloworld.c
+    keystate.c
+    keystatereader.c
+    fullscreen.c
+    texteditor.c
+    winapi.c
  
 solutions in cs:
 
