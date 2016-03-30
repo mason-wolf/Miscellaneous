@@ -58,7 +58,7 @@ public class boa {
                     startButton.setEnabled(false);
                     String TargetMachine = TargetMachineField.getText();
                     String Action = ActionOptions.getSelectedItem().toString();
-                    SettingsParser Settings = new SettingsParser();
+                    settingsparser Settings = new settingsparser();
                     Settings.Set("last_device_queried", TargetMachine);
                     Settings.Set("last_query", Action);
                     if(Action == "Search") {
