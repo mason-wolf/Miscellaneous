@@ -9,6 +9,7 @@ solutions in c:
     keystate.c
     keystatereader.c
     fullscreen.c
+    pftscores.c
     texteditor.c
     winapi.c
  
