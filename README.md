@@ -1,16 +1,9 @@
 solutions in c:
 
-    celsius.c
-    countchar.c
-    fahrenheit.c
-    forloop.c
-    getchar.c
-    helloworld.c
     keystate.c
-    keystatereader.c
     fullscreen.c
     pftscores.c
-    texteditor.c
+    tedit.c
     winapi.c
  
 solutions in cs:
@@ -18,19 +11,15 @@ solutions in cs:
     viper.cs
     assemblyinfo.cs
     bitmasker.cs
-    colorizestring.cs
-    elements.cs
     embeddedresource.cs
     identitycheck.cs
     mimicsql.cs
     proxymanager.cs
     client.cs
-    colorizestring.cs
     htmlremover.cs
     httpserver.cs
     iniparser.cs
     matrix.cs
-    randomnumber.cs
     server.cs
 
 solutions in java:
