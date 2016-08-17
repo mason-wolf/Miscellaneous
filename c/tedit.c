@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+
 void main()
 {
 	FILE *f1;
@@ -23,11 +24,9 @@ void main()
 
 		}
 
+	}
 
-
-
-
-	}while(strcmp(p[i++],"./exit")!=0);
+	while(strcmp(p[i++],"./exit")!=0);
 
 	fclose(f1);
 
