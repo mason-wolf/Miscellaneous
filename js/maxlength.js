@@ -52,3 +52,24 @@ jQuery(document).ready(function($){
 	var $targetfields=$("input[data-maxsize], textarea[data-maxsize]") 
 	setformfieldsize($targetfields)
 })
+
+
+/*
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="../js/maxlength.js"></script>
+
+<form>
+
+<p>Enter your hobbies (<50 characters)</p>
+  <textarea style="width:300px; height:150px" data-maxsize="50" data-output="status1" wrap="virtual"></textarea><br />
+  <div id="status1" style="width:300px;font-weight:bold;text-align:right"></div><br />
+
+<p>Enter your postal code (<6 characters)</p>
+  <input type="text" name="T1" size="15" data-maxsize="6">
+
+</form>
+
+*/

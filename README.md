@@ -37,6 +37,9 @@ solutions in cs:
     randomnumber.cs                 -- generating random numbers
     reportgenerator.cs              -- converts text files to pdf using migradoc library
     userlogin.cs                    -- simple user login form 
+    filereader.cs                   -- open file for reading
+    filewriter.cs                   -- open file for writing
+    sendmail.cs                     -- sending mail with google smtp
 
 solutions in java:
 
@@ -72,6 +75,7 @@ solutions in javascript:
     maxlength.js        -- setting max text length within input control
     ticker.js           -- news ticker example
     typer.js            -- typewriter effect within textarea
+    urlparameters.js    -- pass checkbox items to url parameters
     
 solutions in powershell:
 
@@ -86,3 +90,17 @@ solutions in powershell:
     sendmessage.ps1     -- send notification to workstation
     speedtest.ps1       -- conduct internet speed test
     telnet.ps1          -- telnet client
+    downloader.ps1      -- download file
+
+solutions in php:
+
+    searchengine.php        -- a simple search engine
+    recordlimit.php         -- limit records by page
+    pagination.php          -- pagination example
+    imageupload.php         -- uploading an image
+    imageformat.php         -- identifying image file format
+    generatefn.php          -- generate random file name
+    listboxswap.php         -- moving objects between listboxes
+
+
+
