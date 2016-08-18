@@ -13,8 +13,8 @@
 
     var msgNum = 1; 
     var msgCnt = 2; 
-    var typeSpeed = 70; // typing rate in milliseconds
-    var pageLen = 5; // set to page size, usually number of ROWS in TEXTAREA
+    var typeSpeed = 70; 
+    var pageLen = 5;
     var delay = typeSpeed;
     var r = 0;
     var cr = "\r\n"

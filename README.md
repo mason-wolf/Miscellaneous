@@ -6,7 +6,7 @@ solutions in c:
     pftscores.c         -- simple program to calculate physical fitness test scores
     tedit.c             -- text editor for use within a terminal or shell
     winform.c           -- a complicated attempt to create windows form
-    celsius.c           -- the following are exercise solutions for k&r
+    celsius.c           -- the following are exercise solutions for k&r:
     countchar.c
     fahrenheight.c
     forloop.c
@@ -16,8 +16,8 @@ solutions in c:
 solutions in cs:
     
     viper.cs                        -- a vulnerability scanner for searching obsolete products in an enterprise domain environment
-    assemblyinfo.cs                 -- example use for including assemblyinfo within an application
-    bitmasker.cs                    -- convert any file to Base64 format
+    assemblyinfo.cs                 -- example use for including assembly info within an application
+    bitmasker.cs                    -- convert any file to base64 format
     embeddedresource.cs             -- embed a resource witin an application
     identitycheck.cs                -- identifies user running the application
     wolfsql.cs                      -- an attempt to re-create sql functionality
@@ -29,7 +29,7 @@ solutions in cs:
     matrix.cs                       -- just for fun, display the matrix effect from the film 
     server.cs                       -- a simple server
     colorizestring.cs               -- example use for coloring strings
-    datagridview_selectedvalue.cs   -- retrieving value of DataGridView index
+    datagridview_selectedvalue.cs   -- retrieving value of datagridview index
     elements.cs                     -- looping through arrays
     fieldtextselection.cs           -- autoselecting text within fields for filling out forms
     keypressevent.cs                -- example use for handling keystrokes in a form
@@ -40,51 +40,49 @@ solutions in cs:
 
 solutions in java:
 
-    actionlistenerbutton.java
-    combobox.java
-    confirmdialog.java
-    getfieldvalue.java
-    menubar.java
-    messagedialog.java
-    namespaces.java
-    readfile.java
-    scrollbarpolicy.java
-    swingframe.java
-    systemlookfeel.java
-    textcontrols.java
-    executepscmd.java
-    settingsparser.java
-    swingworker.java
-    boa.java
-    settingsparser.java
-    displaymodes.java
-    
+    actionlistenerbutton.java      -- action listener example
+    combobox.java                  -- combo box example
+    confirmdialog.java             -- confirm diaglog example
+    getfieldvalue.java             -- retrieving value of field
+    menubar.java                   -- using menu bars
+    messagedialog.java             -- showing message diaglogs
+    namespaces.java                -- common libraries
+    readfile.java                  -- reading files
+    scrollbarpolicy.java           -- setting vertical scrollbar options
+    swingframe.java                -- using swing framework
+    systemlookfeel.java            -- using operating system's default look and feel    
+    textcontrol.java               -- text control example
+    executeps.java                 -- executing powershell commands
+    settingsparser.java            -- reading configuration files
+    swingworker.java               -- background worker example
+    boa.java                       -- a remote management tool      
+    displaymodes.java              -- setting display modes
+    filecheck.java                 -- check if file exists
     
 solutions in javascript:
 
-    checkbox.js
-    shell.js
-    switch.js
-    encrypt.js
-    fsolist.js
-    hints.js
-    colorcodes.js
-    jshtml.js
-    maxlength.js
-    ticker.js
-    typer.js
+    checkbox.js         -- retrieving items from checkbox
+    shell.js            -- executing a process similar to process.start()
+    switch.js           -- example use of switch
+    encrypt.js          -- an experimental 'encryption' script
+    fsolist.js          -- show items in current directory on the local file system
+    hints.js            -- control tooltip hint boxes
+    colorcodes.js       -- used to display html color codes
+    jshtml.js           -- parse html to use for strings in javascript
+    maxlength.js        -- setting max text length within input control
+    ticker.js           -- news ticker example
+    typer.js            -- typewriter effect within textarea
     
 solutions in powershell:
 
-    csvsearch.ps1
-    getprinters.ps1
-    javaie.ps1
-    locator.ps1
-    lockmachine.ps1
-    logoffuser.ps1
-    mail.ps1
-    reboot.ps1
-    sendmail.ps1
-    sendmessage.ps1
-    speedtest.ps1
-    telnet.ps1
+    getprinters.ps1     -- retrieve list of installed printers
+    javaie.ps1          -- show installed versions of java and internet explorer
+    locator.ps1         -- get location of machine from active directory
+    lockmachine.ps1     -- remotely lock machine
+    logoffuser.ps1      -- remotely log off user
+    mail.ps1            -- retrive emails from google atom feeds
+    reboot.ps1          -- remotely reboot a machine
+    sendmail.ps1        -- send email with outlook account
+    sendmessage.ps1     -- send notification to workstation
+    speedtest.ps1       -- conduct internet speed test
+    telnet.ps1          -- telnet client

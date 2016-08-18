@@ -1,14 +1,14 @@
-var thresholdcolors=[['20%','darkred'], ['10%','red']] //[chars_left_in_pct, CSS color to apply to output]
-var uncheckedkeycodes=/(8)|(13)|(16)|(17)|(18)/  //keycodes that are not checked, even when limit has been reached.
+var thresholdcolors=[['20%','darkred'], ['10%','red']] 
+var uncheckedkeycodes=/(8)|(13)|(16)|(17)|(18)/  
 
-thresholdcolors.sort(function(a,b){return parseInt(a[0])-parseInt(b[0])}) //sort thresholdcolors by percentage, ascending
+thresholdcolors.sort(function(a,b){return parseInt(a[0])-parseInt(b[0])}) 
 
 function setformfieldsize($fields, optsize, optoutputdiv){
 	var $=jQuery
 	$fields.each(function(i){
 		var $field=$(this)
-		$field.data('maxsize', optsize || parseInt($field.attr('data-maxsize'))) //max character limit
-		var statusdivid=optoutputdiv || $field.attr('data-output') //id of DIV to output status
+		$field.data('maxsize', optsize || parseInt($field.attr('data-maxsize'))) 
+		var statusdivid=optoutputdiv || $field.attr('data-output') 
 		$field.data('$statusdiv', $('#'+statusdivid).length==1? $('#'+statusdivid) : null)
 		$field.unbind('keypress.restrict').bind('keypress.restrict', function(e){
 			setformfieldsize.restrict($field, e)
@@ -16,14 +16,14 @@ function setformfieldsize($fields, optsize, optoutputdiv){
 		$field.unbind('keyup.show').bind('keyup.show', function(e){
 			setformfieldsize.showlimit($field)
 		})
-		setformfieldsize.showlimit($field) //show status to start
+		setformfieldsize.showlimit($field) 
 	})
 }
 
 setformfieldsize.restrict=function($field, e){
 	var keyunicode=e.charCode || e.keyCode
 	if (!uncheckedkeycodes.test(keyunicode)){
-		if ($field.val().length >= $field.data('maxsize')){ //if characters entered exceed allowed
+		if ($field.val().length >= $field.data('maxsize')){ 
 			if (e.preventDefault)
 				e.preventDefault()
 			return false
@@ -38,7 +38,7 @@ setformfieldsize.showlimit=function($field){
 	}
 	if ($field.data('$statusdiv')){
 		$field.data('$statusdiv').css('color', '').html($field.val().length)
-		var pctremaining=($field.data('maxsize')-$field.val().length)/$field.data('maxsize')*100 //calculate chars remaining in terms of percentage
+		var pctremaining=($field.data('maxsize')-$field.val().length)/$field.data('maxsize')*100 
 		for (var i=0; i<thresholdcolors.length; i++){
 			if (pctremaining<=parseInt(thresholdcolors[i][0])){
 				$field.data('$statusdiv').css('color', thresholdcolors[i][1])
@@ -48,7 +48,7 @@ setformfieldsize.showlimit=function($field){
 	}
 }
 
-jQuery(document).ready(function($){ //fire on DOM ready
-	var $targetfields=$("input[data-maxsize], textarea[data-maxsize]") //get INPUTs and TEXTAREAs on page with "data-maxsize" attr defined
+jQuery(document).ready(function($){ 
+	var $targetfields=$("input[data-maxsize], textarea[data-maxsize]") 
 	setformfieldsize($targetfields)
 })

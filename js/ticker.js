@@ -94,9 +94,9 @@ var ticker = {
 
 
 ticker.define({
-    id: "tickerContainer",         //main div id
-    msgclass: "messagediv",     //CSS class of DIVs containing each message
-    msgsource: "inline",        //Where to look for the messages
-    rotatespeed: 3000,          //pause in milliseconds 
-    animateduration: 1000       //duration of fade animation 
+    id: "tickerContainer",      
+    msgclass: "messagediv",     
+    msgsource: "inline",        
+    rotatespeed: 3000,          
+    animateduration: 1000       
 })
