@@ -95,8 +95,8 @@ int main(void) {
             }
             else {
               // retrieve sender and email contents
-              char * sender = extract_tag("\n<name>", "</name>\n", 6);
-              char * msg = extract_tag("\n<summary>", "</summary>\n\n", 11);
+              char * sender = extract_tag("<name>", "</name>", 6);
+              char * msg = extract_tag("<summary>", "</summary>", 11);
               printf("%s\n", sender);
               printf("%s\n", msg);
             }
