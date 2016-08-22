@@ -1,5 +1,8 @@
 solutions in c:
 
+    getmail.c           -- retrieve atom feed from gmail to view inbox
+    fcontains.c         -- searches file for strings
+    fread.c             -- reads file and outputs contents
     curlfile.c          -- download file using libcurl API
     strextr.c           -- extracting text between one string and another
     keystate.c          -- example use of GetAsyncKeyState() WinAPI to record keystrokes, for educational purposes
