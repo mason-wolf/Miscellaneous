@@ -1,5 +1,7 @@
 solutions in c:
 
+    fchar.c             -- read file into char array
+    sendmail.c          -- implementing SMTP with lcurl
     getmail.c           -- retrieve atom feed from gmail to view inbox
     fcontains.c         -- searches file for strings
     fread.c             -- reads file and outputs contents

@@ -5,6 +5,11 @@
 
 //  getmail.c   -- retrieves summary from gmail inbox atom feed
 //  written by Mason Wolf, 2016   masonhwolf@gmail.com
+//  compile with libcurl  gcc getmail.c -lcurl -o getmail
+//  su apt-get install
+//  libcurl-dev
+//  libcurl4-openssl-dev
+//  libcurl4-gnutls-dev
 
 // function to handle curl buffer
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
@@ -95,8 +100,8 @@ int main(void) {
             }
             else {
               // retrieve sender and email contents
-              char * sender = extract_tag("\n<name>", "</name>\n", 6);
-              char * msg = extract_tag("\n<summary>", "</summary>\n\n", 11);
+              char * sender = extract_tag("<name>", "</name>", 6);
+              char * msg = extract_tag("<summary>", "</summary>", 11);
               printf("%s\n", sender);
               printf("%s\n", msg);
             }
