@@ -1,10 +1,14 @@
 solutions in c:
 
+    streverse.c         -- reverse string
+    squeeze.c           -- remove characters from char array
+    strint.c            -- converts string of characters to its numerical equivalent
     fchar.c             -- read file into char array
     sendmail.c          -- implementing SMTP with lcurl
     getmail.c           -- retrieve atom feed from gmail to view inbox
     fcontains.c         -- searches file for strings
     fread.c             -- reads file and outputs contents
+    fwrite.c            -- write to file
     curlfile.c          -- download file using libcurl API
     strextr.c           -- extracting text between one string and another
     keystate.c          -- example use of GetAsyncKeyState() WinAPI to record keystrokes, for educational purposes
