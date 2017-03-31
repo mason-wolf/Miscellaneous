@@ -15,7 +15,7 @@ namespace Base_Oversight_Accumulator.LocalStorage
     /// <summary>
     /// ReportGenerator -- Converts text file to PDF using MigraDoc library.
     /// </summary>
-  
+
     class ReportGenerator
     {
         static Document CreateDocument()
