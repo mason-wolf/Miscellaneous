@@ -1,7 +1,7 @@
 solutions in c:
 
     intchar.c           -- convert int to char
-    concat.c		-- function to concatenate strings
+    concat.c		        -- function to concatenate strings
     streverse.c         -- reverse string
     squeeze.c           -- remove characters from char array
     strint.c            -- converts string of characters to its numerical equivalent
@@ -21,17 +21,23 @@ solutions in c:
 
 solutions in cs:
 
-    ByteConverter.cs		    -- converts bytes to megabytes, kilobytes, etc.
-    DateTimeParser.cs		    -- recieves date as string and strips day, month year seperately
+    ConfirmationDialog.cs	          -- confirmation dialog example
+    RichTextBoxHighlighter.cs       -- highlights text within a RichTextBox
+    SaveFileDialog.cs		            -- save file dialog example
+    ShortcutKeys.cs		              -- handling KeyPress events
+    SpecialCharactersRemover.cs     -- removes special characters from string
+    BalloonTip.cs		                -- notification icon on the taskbar
+    ByteConverter.cs		            -- converts bytes to megabytes, kilobytes, etc.
+    DateTimeParser.cs		            -- recieves date as string and strips day, month year seperately
     DirectoryModificationDate.cs    -- retrieves last modification date of folder/file
-    ElapsedTime.cs		    -- show elapsed time on the same thread
-    FileLineReader.cs	 	    -- read each line within a file
-    FileLineRemover.cs 		    -- remove a line within a file
-    ListBoxRecursion.cs		    -- reiterate through a listbox to retrieve items
-    MethodInvoker.cs		    -- manipulating controls from an synchronous thread
-    ProcessInfo.cs		    -- invoking an external process with arguments
+    ElapsedTime.cs		              -- show elapsed time on the same thread
+    FileLineReader.cs	 	            -- read each line within a file
+    FileLineRemover.cs 		          -- remove a line within a file
+    ListBoxRecursion.cs		          -- reiterate through a listbox to retrieve items
+    MethodInvoker.cs		            -- manipulating controls from an synchronous thread
+    ProcessInfo.cs		              -- invoking an external process with arguments
     RemoteSessionTerminator.cs      -- remotely terminate a session
-    ToolTips.cs			    -- create tooltips on controls
+    ToolTips.cs			                -- create tooltips on controls
     TransparentButtonBorder.cs	    -- removing border when a button is selected
     viper.cs                        -- a vulnerability scanner for searching obsolete products in an enterprise domain environment
     assemblyinfo.cs                 -- example use for including assembly info within an application
