@@ -1,5 +1,6 @@
 solutions in c:
 
+    intchar.c           -- convert int to char
     concat.c		    -- function to concatenate strings
     streverse.c         -- reverse string
     squeeze.c           -- remove characters from char array
