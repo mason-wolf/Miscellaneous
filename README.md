@@ -1,7 +1,7 @@
 solutions in c:
 
     intchar.c           -- convert int to char
-    concat.c		    -- function to concatenate strings
+    concat.c            -- function to concatenate strings
     streverse.c         -- reverse string
     squeeze.c           -- remove characters from char array
     strint.c            -- converts string of characters to its numerical equivalent
