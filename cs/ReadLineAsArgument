@@ -1,0 +1,2 @@
+            string[] sentence = user_input.Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+            Console.WriteLine(sentence[0]);
