@@ -1,0 +1,9 @@
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\bin\Debug\VIPER.exe.config
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\bin\Debug\VIPER.exe
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\bin\Debug\VIPER.pdb
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.csprojResolveAssemblyReference.cache
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.Properties.Resources.resources
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.csproj.GenerateResource.Cache
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.exe
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.pdb
+C:\Users\Mason.LAPTOP-RJFK2H6N\Documents\PROJECTS\VIPER\VIPER\obj\Debug\VIPER.Viper.resources
