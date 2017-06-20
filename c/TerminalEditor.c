@@ -8,10 +8,8 @@ void main(int argc, char *argv[]) {
     }
 
     else {
-
-        printf("\n%s\n", argv[1]);
-        printf("./save - save file\n");
-        printf("./exit - exit\n\n");
+        printf("\nFilename: %s\n", argv[1]);
+        printf("Type './exit' to exit.'\n\n");
 
     FILE *file;
     
@@ -26,25 +24,25 @@ void main(int argc, char *argv[]) {
 
     do {    
         // scanf - read formatted input from stdin
+        printf(">");
         scanf("%s", fileLength[row]);
+    }
 
-        // strcmp - string compare, seek if stdin contains ./save 
-        if ((strcmp(fileLength[row], "./save")) == 0) {
+    // strcmp - string compare, seek if stdin contains ./save 
+
+    while (strcmp(fileLength[row++], "./exit") != 0); {
             // fseek - sets the file position of the stream to the given offset
             fseek(file, 0L, 0);
             row--;
             for (column = 0; column <= row; column++) {
                 // fprintf - sends the formatted output to a stream 
                 // recursively adding each row and column 
+                if (strcmp(fileLength[column], "./exit") != 0) {
                 fprintf(file, "\n%s\n", fileLength[column]);
                 putc(' ', file);
+                }
             }
+            fclose(file);
         }
-    }
-
-    while (strcmp(fileLength[row++], "./exit") != 0);
-
-    fclose(file);
-
     }
 }
