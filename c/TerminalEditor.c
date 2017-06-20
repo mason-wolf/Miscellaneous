@@ -1,40 +1,39 @@
+#include <stdio.h>
+#include <string.h>
 
-#include<stdio.h>
+void main() {
 
-void main()
-{
-	FILE *f1;
-	char p[100][100],c;
-	f1=fopen("abc.txt","a");
-	int i=0,j;
-	do
-	{
+    FILE *file;
+    
+    // declare two-dimensional array, or table that has x rows and y columns
+    // where x = 100 and y = 100
 
-		scanf("%s",p[i]);
-		if((strcmp(p[i],"./save"))==0)
-		{
-			fseek(f1,0L,0);
-			i--;
-			for(j=0;j<=i;j++)
-			{
-				fprintf(f1,"%s",p[j]);
-				putc(' ',f1);
-				
-			}
+    char fileLength[100][100], fileBuffer;
 
-		}
+    file = fopen("test.txt", "a");
+    
+    int row = 0, column;
 
-	}
+    do {    
+        // scanf - read formatted input from stdin
+        scanf("%s", fileLength[row]);
 
-	while(strcmp(p[i++],"./exit")!=0);
+        // strcmp - string compare, seek if stdin contains ./save 
+        if ((strcmp(fileLength[row], "./save")) == 0) {
+            // fseek - sets the file position of the stream to the given offset
+            fseek(file, 0L, 0);
+            row--;
+            for (column = 0; column <= row; column++) {
+                // fprintf - sends the formatted output to a stream 
+                // recursively adding each row and column 
+                fprintf(file, "%s", fileLength[column]);
+                putc(' ', file);
+            }
+        }
+    }
 
-	fclose(f1);
+    while (strcmp(fileLength[row++], "./exit") != 0);
 
-	f1=fopen("abc.txt","r");
-	while((c=getc(f1))!=EOF)
-	{
-		printf("%c",c);
-	}
+    fclose(file);
 
-	fclose(f1);
 }
