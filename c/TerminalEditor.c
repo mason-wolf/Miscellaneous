@@ -1,7 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
-void main() {
+void main(int argc, char *argv[]) {
+
+    if (argc != 2) {
+        printf("No filename specified.");
+    }
+
+    else {
+
+        printf("\n%s\n", argv[1]);
+        printf("./save - save file\n");
+        printf("./exit - exit\n\n");
 
     FILE *file;
     
@@ -10,7 +20,7 @@ void main() {
 
     char fileLength[100][100], fileBuffer;
 
-    file = fopen("test.txt", "a");
+    file = fopen(argv[1], "a");
     
     int row = 0, column;
 
@@ -26,7 +36,7 @@ void main() {
             for (column = 0; column <= row; column++) {
                 // fprintf - sends the formatted output to a stream 
                 // recursively adding each row and column 
-                fprintf(file, "%s", fileLength[column]);
+                fprintf(file, "\n%s\n", fileLength[column]);
                 putc(' ', file);
             }
         }
@@ -36,4 +46,5 @@ void main() {
 
     fclose(file);
 
+    }
 }
