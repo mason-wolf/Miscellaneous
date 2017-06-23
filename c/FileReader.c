@@ -2,27 +2,27 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * fchar() {
-  FILE *fp;
-  long lSize;
-  char *buffer;
+void main(int argc, char *argv[]) {
 
-  fp = fopen ( "mail.txt" , "r" );
+    if (argc != 2) {
+        printf("No filename specified.");
+    }
+    else {
+    FILE *file;
+    long fileSize;
+    char *buffer;
 
-  fseek( fp , 0L , SEEK_END);
-  lSize = ftell( fp );
-  rewind( fp );
+    file = fopen(argv[1], "r");
+    fseek(file, 0L, SEEK_END);
+    fileSize = ftell(file);
+    rewind(file);
+    buffer = calloc(1, fileSize + 1);
 
-  buffer = calloc( 1, lSize+1 );
+    if (1 != fread(buffer, fileSize, 1, file)) {
+        printf(buffer);
+    }
 
-  if( 1!=fread( buffer , lSize, 1 , fp) );
-
-  return (buffer);
-
-  fclose(fp);
-  free(buffer);
-}
-
-int main() {
-  printf("%s\n", fchar());
+    fclose(file);
+    free(buffer);
+    }
 }
