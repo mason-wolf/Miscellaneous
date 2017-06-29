@@ -11,10 +11,10 @@ if (isset($_POST['FirstName'])) {
     $City = $_POST['City'];
     $Comments = $_POST['Comments'];
     $Date = date("Y-m-d");
+    
+    # real_escape_string -- mysqli_real_escape_string — Escapes special characters in a string
+   
     $Query = mysqli_query($connection, "insert into jobs (FirstName, LastName, PhoneNumber, HomeAddress, Comments, City, Date) VALUES
-    
-    # mysqli::real_escape_string -- mysqli_real_escape_string — Escapes special characters in a string
-    
     ('" . mysqli_real_escape_string($connection, $FirstName) . "','" . mysqli_real_escape_string($connection, $LastName) .
     "','" . mysqli_real_escape_string($connection, $PhoneNumber) . "','" . mysqli_real_escape_string($connection, $HomeAddress) .
     "','" . mysqli_real_escape_string($connection, $City) . "','" . mysqli_real_escape_string($connection, $Comments) .
