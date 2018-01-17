@@ -1,0 +1,40 @@
+
+body, input, div {
+    font-family: Raleway;
+    font-size:15px;
+}
+
+.login {
+  color:white;
+  padding:0.2em 0.6em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:250px;
+  width:500px;
+  height:250px;
+  background-color:#373131;
+  display: table;
+}
+
+.login label {
+
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 200px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.login input {
+  margin-top:10px;
+  display: inline-block;
+  float: left;
+}
+
+.loginform {
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
