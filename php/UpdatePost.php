@@ -28,6 +28,7 @@ if (isset($_SESSION['admin']))
 		while ($row = mysqli_fetch_assoc($query))
 			{
 ?>
+
 <div class="content">
   <div class="newPost">
     <form action="" method="post">
@@ -41,15 +42,3 @@ if (isset($_SESSION['admin']))
   </div>
 </div>
 
-<?php
-			}
-		}
-	include ('../inc/footer.php');
-	}
-  else
-	{
-	Header('Location: ../login/');
-	exit();
-	}
-
-?>
